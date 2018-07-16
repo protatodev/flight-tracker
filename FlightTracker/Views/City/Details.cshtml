@@ -22,7 +22,7 @@
             <p><a href="~/flight/@flight.Id/details">@flight.FlightNum</a></p>
         }
         <a href="/city/@Model.Id/update" class="btn btn-primary">Edit</a>
-        <form method="post" action="/city/@Model.Id/delete"><button type="submit" class="btn btn-danger">Delete</button></form>
+        <form method="post" class="inline-form-button" action="/city/@Model.Id/delete"><button type="submit" class="btn btn-danger">Delete</button></form>
         <hr />
     </div>
 </div>

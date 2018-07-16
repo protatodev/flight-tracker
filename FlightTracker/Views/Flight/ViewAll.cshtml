@@ -19,7 +19,7 @@
             {
                 <h4><a href="/flight/@flight.Id/details">@flight.FlightNum</a></h4>
                 <a href="/flight/@flight.Id/update" class="btn btn-primary">Edit</a>
-                <a href="/flight/@flight.Id/delete" class="btn btn-danger">Delete</a>
+                        <form class="inline-form-button" method="post" action="/flight/@flight.Id/delete"><button type="submit" class="btn btn-danger">Delete</button></form>
                 <hr />
             }
         }

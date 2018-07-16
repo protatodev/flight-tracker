@@ -21,7 +21,8 @@
                 <input type="text" name="newName" value="@Model.Name" required>
             </div>
             <button type="submit" class="btn btn-primary">Edit</button>
-            <a href="/" class="btn btn-primary">Return to Home</a>
         </form>
+        <form class="inline-form-button" method="post" action="/city/@Model.Id/delete"><button type="submit" class="btn btn-danger">Delete</button></form>
+        <a href="/" class="btn btn-primary">Return to Home</a>
     </div>
 </div>

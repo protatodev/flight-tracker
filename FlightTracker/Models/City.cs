@@ -187,7 +187,7 @@ namespace FlightTracker.Models
             else
             {
                 City newCity = (City)otherCity;
-                bool idEquality = (this.Id == newCity.Id;
+                bool idEquality = (this.Id == newCity.Id);
                 bool cityNameEquality = (this.Name == newCity.Name);
 
                 return (idEquality && cityNameEquality);

@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1>Cities</h1>
+        </div>
+        <a href="/new-city" class="btn btn-primary">Add New City</a>
+        <a href="/" class="btn btn-primary">Return to Home</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Current Cities</h3>
+        @{
+            foreach (var city in Model)
+            {
+                <h4><a href="/city/@city.Id/details">@city.Name</a></h4>
+                <a href="/city/@city.Id/update" class="btn btn-primary">Edit</a>
+                <a href="/city/@city.Id/delete" class="btn btn-danger">Delete</a>
+                <hr />
+            }
+        }
+    </div>
+</div>

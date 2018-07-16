@@ -10,6 +10,15 @@
                 <input type="number" id="number" name="number" required />
             </div>
             <div class="form-group">
+                <label for="city">Select City:</label>
+                <select name="city" required>
+                    @foreach(var city in Model)
+                    {
+                        <option value="@city.Id">@city.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="time">Enter A Departure Time</label>
                 <input type="time" id="time" name="time" required />
             </div>

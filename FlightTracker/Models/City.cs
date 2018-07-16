@@ -68,7 +68,7 @@ namespace FlightTracker.Models
             {
                 int id = rdr.GetInt32(0);
                 int flightNum = rdr.GetInt32(1);
-                DateTime time = rdr.GetDateTime(2);
+                TimeSpan time = rdr.GetTimeSpan(2);
                 string arrival_departure = rdr.GetString(3);
                 string status = rdr.GetString(4);
                 Flight newFlight = new Flight(flightNum, time, arrival_departure, status, id);

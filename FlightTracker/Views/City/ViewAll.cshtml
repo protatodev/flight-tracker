@@ -19,7 +19,7 @@
             {
                 <h4><a href="/city/@city.Id/details">@city.Name</a></h4>
                 <a href="/city/@city.Id/update" class="btn btn-primary">Edit</a>
-                <a href="/city/@city.Id/delete" class="btn btn-danger">Delete</a>
+                <form method="post" action="/city/@city.Id/delete"><button type="submit" class="btn btn-danger">Delete</button></form>
                 <hr />
             }
         }

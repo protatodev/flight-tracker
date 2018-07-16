@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1>@Model.Name</h1>
+        </div>
+        <a href="/new-city" class="btn btn-primary">Add New City</a>
+        <a href="/" class="btn btn-primary">Return to Home</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <h3>@Model.Name:</h3>
+        <hr /><br />
+        <h4>@Model.Name</h4>
+        <h5><strong>Flights</strong></h5>
+        @foreach(var flight in Model.GetFlights())
+        {
+            <p><a href="~/flight/@flight.Id/details">@flight.FlightNum</a></p>
+        }
+        <a href="/city/@Model.Id/update" class="btn btn-primary">Edit</a>
+        <form method="post" action="/city/@Model.Id/delete"><button type="submit" class="btn btn-danger">Delete</button></form>
+        <hr />
+    </div>
+</div>

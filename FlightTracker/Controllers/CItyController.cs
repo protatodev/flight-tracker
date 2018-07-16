@@ -31,5 +31,36 @@ namespace FlightTracker.Controllers
             List<City> allCities = City.GetAll();
             return View(allCities);
         }
+
+        [HttpGet("city/{id}/details")]
+        public ActionResult Details(int id)
+        {
+            City newCity = City.Find(id);
+            return View(newCity);
+        }
+
+        [HttpGet("city/{id}/update")]
+        public ActionResult Edit(int id)
+        {
+            City newCity = City.Find(id);
+            return View(newCity);
+        }
+
+        [HttpPost("city/{id}/update")]
+        public ActionResult EditDetails(int id)
+        {
+            string newName = Request.Form["newName"];
+            City newCity = City.Find(id);
+            newCity.Edit(newName);
+            return RedirectToAction("ViewAll");
+        }
+
+        [HttpPost("city/{id}/delete")]
+        public ActionResult Delete(int id)
+        {
+            City newCity = City.Find(id);
+            newCity.Delete();
+            return RedirectToAction("ViewAll");
+        }
     }
 }

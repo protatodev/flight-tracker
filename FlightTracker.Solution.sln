@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightTracker", "FlightTracker\FlightTracker.csproj", "{59F568D1-F2DF-4F40-B97A-782F12EF3193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightTracker.Tests", "FlightTracker.Tests\FlightTracker.Tests.csproj", "{5535346D-83BD-4261-8BD9-BD71C373718B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59F568D1-F2DF-4F40-B97A-782F12EF3193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F568D1-F2DF-4F40-B97A-782F12EF3193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F568D1-F2DF-4F40-B97A-782F12EF3193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F568D1-F2DF-4F40-B97A-782F12EF3193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5535346D-83BD-4261-8BD9-BD71C373718B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5535346D-83BD-4261-8BD9-BD71C373718B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5535346D-83BD-4261-8BD9-BD71C373718B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5535346D-83BD-4261-8BD9-BD71C373718B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
